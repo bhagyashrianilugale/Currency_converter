@@ -23,7 +23,7 @@ header{
     margin: 20px;
 }
 
- .select-box select::-webkit-scrollbar{
+ /* .select-box select::-webkit-scrollbar{
      width: 8px;
 }
 
@@ -35,7 +35,7 @@ header{
     background-color: #888;
     border-radius: 8px;
     border-right: 2px, solid #fff;
-}
+} */
 
 .from{
     height: 150px;
