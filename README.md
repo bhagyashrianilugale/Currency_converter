@@ -16,8 +16,8 @@ Additionally, flag icons are displayed next to each currency for easy identifica
 - Select the currency you want to convert from in the from dropdown menu.
 - Select the currency you want to convert to in the to dropdown menu.
 - Enter the amount you want to convert.
-- Click on get xchange-rate button or convert icon.
-  The converted amount will be displayed instantly.
+- Click on get exchange-rate button or convert icon.
+- The converted amount will be displayed instantly.
   
 ## APIs Used
 - Flag API: Used to fetch flag icons for each currency.
@@ -27,7 +27,7 @@ Additionally, flag icons are displayed next to each currency for easy identifica
 1. Clone the repository to your local machine.
 bash
 ```javascript
-git clone 
+git clone https://github.com/bhagyashrianilugale/Currency_converter.git
 ```
 2. Open the index.html file in your web browser.
 
