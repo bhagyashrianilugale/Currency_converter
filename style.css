@@ -71,8 +71,34 @@ header{
 
 @media (max-width: 468px) {
     body{
-        margin: 60px 30px 60px 20px;
+        margin: 60px 30px 60px 30px;
     } 
+}
+
+ /* Landscape-specific styles  */
+
+@media (orientation: landscape) {
+    body {
+        font-size: 16px;
+        margin: 10px 400px 10px 350px;
+    }
+
+    .main_container{
+        height: 340px;
+        width: 280px;
+    }
+
+    .get_btn{
+        margin-top: 10px;
+    }
+}
+
+/* Portrait-specific styles here */
+
+@media (orientation: portrait) {
+    body {
+        font-size: 14px;
+    }
 }
 
 
