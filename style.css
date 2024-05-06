@@ -81,7 +81,7 @@ header{
 @media (orientation: landscape) {
     body {
         font-size: 16px;
-        margin: 10px 400px 10px 350px;
+        margin: 10px 350px 10px 350px;
     }
 
     .main_container{
