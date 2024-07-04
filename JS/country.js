@@ -1,4 +1,4 @@
-const countryCodes = {
+countryCodes = {
   "USD": "US",
   "NPR": "CA",
   "INR": "IN",

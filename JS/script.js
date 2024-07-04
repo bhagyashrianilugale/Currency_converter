@@ -3,7 +3,7 @@ const dropList = document.querySelectorAll(".drop_list select");
 const getButton = document.querySelector(".get_btn");
 const fromCurrency = document.querySelector(".from select");
 const toCurrency = document.querySelector(".to select");
-const fromImgTag = document.querySelector('.from img'); 
+const fromImgTag = document.querySelector('.form img'); 
 const toImgTag = document.querySelector('.to img');
 const selectBox = document.querySelector('select-box');
 const imgTag = document.createElement('img');
@@ -31,34 +31,35 @@ for(let i = 0; i < dropList.length; i++){
     })
 };
 function loadFlag(e){
-       const countryCode = e.target;
-       console.log(e);
-       console.log(countryCode);
-
-        for(code in countryCodes){
-            if(countryCode.value == code){
+    const select = e.target;
+    const countryCode = e.target.value;
+    const selectFrom = document.querySelector("#fromimg");
+    const selectTo = document.querySelector("#toimg");
+       for(code in countryCodes){
+            if(countryCode == code){
                  const flagCode =  countryCodes[code];
-                //  let imgTag = e.target.querySelector("img");
-                //  imgTag.src = `https://flagsapi.com/${flagCode}/flat/64.png`;
-            
-                 getFlag(flagCode, fromImgTag);
+                 if(select == selectFrom){
+                                 let imgTag = document.querySelector("#from_img");
+                                  getFlag(flagCode, imgTag);
+                 }else if(select == selectTo){
+                                let imgTag = document.querySelector("#to_img");
+                                getFlag(flagCode, imgTag);
+
+                 }
+                
              }
         }
 }
 
-function getFlag(flagCode, fromImgTag){
-    const Img= fromImgTag.getAttribute(`src`);
-    console.log(Img);
-    fromImgTag.setAttribute(`src`,`https://flagsapi.com/${flagCode}/flat/64.png`);
+function getFlag(flagCode, imgTag){
+    const Img = imgTag.setAttribute(`src`,`https://flagsapi.com/${flagCode}/flat/64.png`);
 }
 
 icon.addEventListener("click", (event)=>{
-    console.log("clicked");
     event.preventDefault();
     getExchangeRate();
 })
 getButton.addEventListener("click", (event)=>{
-      console.log("clicked");
       event.preventDefault();
       getExchangeRate();
 });
